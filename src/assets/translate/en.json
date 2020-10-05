@@ -1,0 +1,30 @@
+{
+    "navbar":
+    {
+        "home":"Home",
+        "features":"Features",
+        "pricing":"Pricing",
+        "contact":"Contact Us",
+        "blogs":"Blogs",
+        "login":"Login",
+        "lang":"English",
+        "register":"Create Your Own Store Now"
+    }
+    ,
+    "contact-us":
+    {
+        "feeling":"Tell Us What You Feel",
+        "feeling-free":"Feel Free To Contact Us Anytime",
+        "username":"User Name",
+        "email":"Email",
+        "phone":"Phone",
+        "message":"Message",
+        "contact":"Contact Us",
+        "username-required":"Please Enter Username",
+        "email-required":"Please Enter Email",
+        "email-format":"Please Enter a valid Email Format",
+        "phone-required":"Please Enter Phone",
+        "message-required":"Please Enter Message"
+
+    }
+}

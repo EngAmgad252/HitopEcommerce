@@ -1,0 +1,49 @@
+<!-- Start Section Contact Us -->
+        
+<section class="contact-us text-center">
+    <div class="fields">
+        <div class="container">
+          <i class="fa fa-headphones fa-5x"></i>
+          <h1>{{"contact-us.feeling"|translate}}</h1>
+          <p >{{"contact-us.feeling-free"|translate}}</p>
+  
+  <!--Start Contact Form-->
+          <form [formGroup]="formData" (ngSubmit)="contactUs()">
+            <div class="row">
+                              
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" formControlName="userName" [(ngModel)]="contact.userName" placeholder="{{'contact-us.username'|translate}}">
+                        </div>
+                        <div *ngIf="controls.userName.touched &&controls.userName.errors?.required"   class="alert alert-danger">{{'contact-us.username-required'|translate}}</div>
+                        <div class="form-group">
+                            <input type="text" class="form-control"  formControlName="email" [(ngModel)]="contact.email" placeholder="{{'contact-us.email'|translate}}">
+                        </div>
+                        <div *ngIf="controls.email.touched &&controls.email.errors?.required"   class="alert alert-danger">{{'contact-us.email-required'|translate}}</div>
+                        <div *ngIf="controls.email.touched &&controls.email.errors?.email"   class="alert alert-danger">{{'contact-us.email-format'|translate}}</div>
+  
+                        <div class="form-group">
+                            <input type="text" class="form-control"  formControlName="phone" [(ngModel)]="contact.phone" placeholder="{{'contact-us.phone'|translate}}">
+                        </div>
+                        <div *ngIf="controls.phone.touched &&controls.phone.errors?.required"   class="alert alert-danger">{{'contact-us.phone-required'|translate}}</div>
+  
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control" formControlName="message" [(ngModel)]="contact.message" placeholder="{{'contact-us.message'|translate}}"></textarea>
+                        </div>
+                        <div *ngIf="controls.message.touched &&controls.message.errors?.required"   class="alert alert-danger">{{'contact-us.message-required'|translate}}</div>
+  
+                        <button type="submit" class="btn btn-danger btn-lg btn-block">{{'contact-us.contact'|translate}}</button>
+                    </div>              
+                <!-- End Contact Form -->
+            
+            </div>
+          </form>
+        </div>
+    </div>
+  </section>
+  
+  <!-- End Section Contact Us -->
+  
